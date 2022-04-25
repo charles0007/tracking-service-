@@ -1,0 +1,39 @@
+{
+  "name": "tracking-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/tracking-service.ts",
+    "start": "node build/tracking-service.js",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nanoid": "^3.1.25",
+    "nodemon": "^2.0.15",
+    "pino": "^6.13.1",
+    "pino-pretty": "^6.0.0",
+    "postgres": "^3.0.6",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.1",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/nanoid": "^3.0.0",
+    "@types/node": "^16.7.1",
+    "@types/pino": "^6.3.11",
+    "@types/supertest": "^2.0.12",
+    "@types/yup": "^0.29.13",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
