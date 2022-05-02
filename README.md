@@ -20,11 +20,28 @@ Run the command  `docker-compose up -d --build`
 this will install all the dependencies
 
 # Request
+
 API
-POST(http://localhost:3200/api/register) user registers for the service
+# registration
+  Register user
+  Url      http://localhost:3200/api/register
+  Payload  {"name":"fullName"}
+  Method   POST
+  POST(http://localhost:3200/api/register) user registers for the service
 
-GET(http://localhost:3200/api/location_lookup) require api_key generated upon registering
+# location_lookup
+  Call Location LookUp API
+  Url      http://localhost:3200/api/location_lookup
+  Method   GET
+  header  {"api_key":""}
+  GET(http://localhost:3200/api/location_lookup) require api_key generated upon registering
 
-GET(http://localhost:3200/api/getUsage)  require api_key generated upon registering
+
+# getUsage
+  Get Usage and bills
+  Url      http://localhost:3200/api/getUsage
+  Method   GET
+  header  {"api_key":""}
+  GET(http://localhost:3200/api/getUsage)  require api_key generated upon registering
 
 
